@@ -1,4 +1,4 @@
-const discordWebHookUrl = "https://discord.com/api/webhooks/1293255132401766430/8zM82e-9ZIKJzuhcMSY9L2A6Yoe7aLGM8zZSxSnFtTsyhMn1KFOnWfF4wwbJaqkOPcxz"
+const discordWebHookUrl = "https://discord.com/api/webhooks/650247235770122241/PKWJ0I1gATbvAp2tqBDEecaurYRMkmY5M0KWfH5Ar08hZoSOfDoC1HnM34DQrLyNmUWN"
 
 
 const post = async () => {
