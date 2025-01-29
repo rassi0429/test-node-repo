@@ -1,19 +1,13 @@
-const discordWebHookUrl = "https://discord.com/api/webhooks/650247235770122241/PKWJ0I1gATbvAp2tqBDEecaurYRMkmY5M0KWfH5Ar08hZoSOfDoC1HnM34DQrLyNmUWN"
+import express from "express"
 
+const app = express()
 const ENV = process.env.SAMPLE_ENV
 
-const post = async () => {
-fetch(discordWebHookUrl, {
-    method: 'POST',
-    headers: {
-        'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({
-        content: 'Hello, World! env is ' + ENV,
-    }),
-    })
 
-    console.log("Posted!")
-}
+app.get("/", (req, res) => {
+    res.send("Hello, World! SAMPLE_ENV is" + ENV)
+})
 
-setInterval(post, 10000)
+app.listen(3000, () => {
+    console.log("Server is running on port 3000")
+})
