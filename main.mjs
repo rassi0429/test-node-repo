@@ -8,6 +8,6 @@ app.get("/", (req, res) => {
     res.send("Hello, World! SAMPLE_ENV is " + ENV)
 })
 
-app.listen(300, () => {
+app.listen(3000, () => {
     console.log("Server is running on port 3000")
 })
