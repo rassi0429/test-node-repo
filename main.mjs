@@ -11,7 +11,8 @@ fetch(discordWebHookUrl, {
         content: 'Hello, World!',
     }),
     })
-    .then(response => response.json())
+
+    console.log("Posted!")
 }
 
 setInterval(post, 10000)
