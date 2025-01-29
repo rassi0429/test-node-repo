@@ -1,5 +1,6 @@
 const discordWebHookUrl = "https://discord.com/api/webhooks/650247235770122241/PKWJ0I1gATbvAp2tqBDEecaurYRMkmY5M0KWfH5Ar08hZoSOfDoC1HnM34DQrLyNmUWN"
 
+const ENV = process.env.SAMPLE_ENV
 
 const post = async () => {
 fetch(discordWebHookUrl, {
@@ -8,7 +9,7 @@ fetch(discordWebHookUrl, {
         'Content-Type': 'application/json',
     },
     body: JSON.stringify({
-        content: 'Hello, World!',
+        content: 'Hello, World! env is ' + ENV,
     }),
     })
 
